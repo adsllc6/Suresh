@@ -744,46 +744,11 @@ hr.divider { border: none; border-top: 1px solid var(--c-border); margin: 4px 0;
               <div class="cc-row-email">laxmikanth.p19@gmail.com</div>
             </div>
           </div>
-          <div class="cc-row" data-email="ruthvik785@gmail.com,pavan92.info@gmail.com" onclick="addCCFromTable(this)">
-            <div class="cc-row-dot"></div>
-            <div style="flex:1">
-              <div class="cc-row-role">Business Analyst / BA / Scrum / PM</div>
-              <div class="cc-row-email">ruthvik785 + pavan92.info</div>
-            </div>
-          </div>
-          <div class="cc-row" data-email="viplavreddych@gmail.com" onclick="addCCFromTable(this)">
-            <div class="cc-row-dot"></div>
-            <div style="flex:1">
-              <div class="cc-row-role">Network / Cisco / CCNA / Firewall</div>
-              <div class="cc-row-email">viplavreddych@gmail.com</div>
-            </div>
-          </div>
-          <div class="cc-row" data-email="pky92co@gmail.com" onclick="addCCFromTable(this)">
-            <div class="cc-row-dot"></div>
-            <div style="flex:1">
-              <div class="cc-row-role">SQL / Oracle / PL-SQL / DBA</div>
-              <div class="cc-row-email">pky92co@gmail.com</div>
-            </div>
-          </div>
           <div class="cc-row" data-email="saikiranp2345@gmail.com" onclick="addCCFromTable(this)">
             <div class="cc-row-dot"></div>
             <div style="flex:1">
               <div class="cc-row-role">Data / ETL / Snowflake / BI / Spark</div>
               <div class="cc-row-email">saikiranp2345@gmail.com</div>
-            </div>
-          </div>
-          <div class="cc-row" data-email="reddy.vinay7656@gmail.com" onclick="addCCFromTable(this)">
-            <div class="cc-row-dot"></div>
-            <div style="flex:1">
-              <div class="cc-row-role">Golang / Go Developer</div>
-              <div class="cc-row-email">reddy.vinay7656@gmail.com</div>
-            </div>
-          </div>
-          <div class="cc-row" data-email="akshay.upadhyay009@gmail.com" onclick="addCCFromTable(this)">
-            <div class="cc-row-dot"></div>
-            <div style="flex:1">
-              <div class="cc-row-role">Cyber Security / SOC / Pentest</div>
-              <div class="cc-row-email">akshay.upadhyay009@gmail.com</div>
             </div>
           </div>
           <div class="cc-row" data-email="Ethan@analyticaldatasolution.com" onclick="addCCFromTable(this)" style="opacity:.65">
@@ -1107,21 +1072,6 @@ function getCC(role) {
   if (r.match(/dynamics|d365|crm|power platform|power apps|power automate|dataverse/))
     return 'laxmikanth.p19@gmail.com';
 
-  // Golang
-  if (r.match(/golang|go developer|go lang|go engineer/))
-    return 'reddy.vinay7656@gmail.com';
-
-  // Cyber Security
-  if (r.match(/cyber|security engineer|security analyst|infosec|information security|soc analyst|penetration test|pentest|ethical hack|vulnerability|siem|cissp|cism|ceh|comptia security|network security|cloud security|zero trust/))
-    return 'akshay.upadhyay009@gmail.com';
-
-  // SQL / Oracle / Database — before BA to prevent DBA matching BA
-  if (r.match(/\bsql\b|oracle|\bpl\/sql\b|database developer|db developer|\bdba\b|database administrator|mysql|postgresql|sql server|t-sql|stored procedure|database engineer|data modeler/))
-    return 'pky92co@gmail.com';
-
-  // Business Analyst / PM / Scrum
-  if (r.match(/business analyst|systems analyst|product manager|product owner|scrum master|agile coach|project manager|process analyst|functional analyst|requirements analyst|program analyst|\bba\b/))
-    return 'ruthvik785@gmail.com,pavan92.info@gmail.com';
 
   // Network / Infrastructure
   if (r.match(/network|cisco|ccna|ccnp|ccie|\blan\b|\bwan\b|firewall|f5|palo alto|meraki|juniper|routing|switching|sdn|noc|network admin|telecom|voip|mpls|bgp|ospf/))
